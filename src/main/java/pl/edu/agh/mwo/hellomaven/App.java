@@ -7,11 +7,12 @@ import com.indvd00m.ascii.render.api.IRender;
 import com.indvd00m.ascii.render.elements.PseudoText;
 
 /**
- * Simple main application
+ * Simple main application.
  */
 public class App {
     public static final int TEXT_WIDTH = 120;
     public static final int TEXT_HEIGHT = 20;
+    public static final int TEXT_COST = 4;
 
     public static void main(String[] args) {
         IRender render = new Render();
@@ -26,6 +27,6 @@ public class App {
     public int getRandomNumber() {
         // chosen by fair dice roll.
         // guaranteed to be random
-        return 4;
+        return TEXT_COST;
     }
 }
